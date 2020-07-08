@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+@media(min-width: 1000px) {
+    header.top .header-inner {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .main-navigation {
+        position: relative;
+        width: auto;
+        height: auto;
+        background:none;
+        font-size: 20px;
+        left: 0;
+        top: 0;
+        justify-self: end;
+        transform:  none;
+        transition: none;
+    }
+
+    .main-navigation ul {
+        display: flex;
+        position: relative;
+        gap: 10px;
+    }
+
+    .main-navigation ul li {
+        border: none;
+        margin: 0;
+    }
+
+    .main-navigation li:nth-child(1) {
+        padding: 0;
+    }
+
+    .main-navigation li a { 
+        padding: 5px 40px 0 40px;
+        display: block;
+        margin: 0;
+    }
+
+    .top .open-btn,
+    .top .close-btn  {
+        display: none;
+    }
+}
+
+@media(min-width: 1200px) {  
+    header.top {
+        width: 100%;
+    }
+
+    header.top .header-inner {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .main {
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 20px;
+        display: grid;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .main-content {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        width: 100%;
+    }
+
+    .blogPage .main-content {
+        grid-template-columns: 1fr;
+    }
+
+    .main-aside {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        width: 100%;
+    }
+}

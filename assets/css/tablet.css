@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+@media(min-width: 700px) and (max-width: 1000px){
+    .main-content article:nth-child(1){
+        grid-column: 1/-1;
+    }
+}
+
+@media(min-width: 700px) and (max-width: 1200px){
+    .main-aside,
+    .main-content {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .blogPage .header-inner,
+    .blogPage p {
+        max-width: 1000px;
+    }
+
+    .blogPage .main-aside,
+    .blogPage .main-content {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    
+    .blogPage .main {
+        max-width: 1000px;
+    }    
+}
